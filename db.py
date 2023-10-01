@@ -23,7 +23,9 @@ def get_api(user_id: int):
             else:
                 api_key = row[0][0]
                 secret_key = row[1][0]
+                
             return api_key, secret_key
+        
         
     except Exception as e:
         print(f"Ошибка: {e}")
