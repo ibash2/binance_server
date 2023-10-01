@@ -1,0 +1,35 @@
+root -> WARNING: connecting
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: ------- Подключение клиента -------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"TJ9JfRio0NQDpRg5V8K8hxwzJ21GNIEJAgv7M1C8mUYLWwu0dsXswWZrE8bL"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["TJ9JfRio0NQDpRg5V8K8hxwzJ21GNIEJAgv7M1C8mUYLWwu0dsXswWZrE8bL"], "id": 1}
+root -> INFO: ------- Подключение клиента -------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"TJ9JfRio0NQDpRg5V8K8hxwzJ21GNIEJAgv7M1C8mUYLWwu0dsXswWZrE8bL"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["TJ9JfRio0NQDpRg5V8K8hxwzJ21GNIEJAgv7M1C8mUYLWwu0dsXswWZrE8bL"], "id": 1}
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Sun, 01 Oct 2023 08:34:06 GMT', 'Server': 'nginx', 'x-mbx-uuid': '3a847175-4123-4530-8aac-01e06590edd0', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a6f67a9421de326f43e9107751b580e.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'FRA56-P4', 'X-Amz-Cf-Id': '6bJcG7i4uvDoqkumeuKhrOJfKA4LU_VetPQ4yhcTv1mTQ0aE5JOysQ=='}, None)
