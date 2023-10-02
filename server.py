@@ -15,11 +15,11 @@ class RequestData(BaseModel):
 
 
 # asincio
-async def async_wrapper(api_key, secret_key):
+async def async_wrapper(api_key, secret_key, user_id):
     from stream import main
     try:
         loop = asyncio.get_event_loop()
-        await loop.run_in_executor(None, main, api_key, secret_key)
+        await loop.run_in_executor(None, main, api_key, secret_key, user_id)
     except Exception as e:
         log_warning(e)
 
@@ -32,26 +32,36 @@ async def process_data_thread(api_key, api_secret):
 
 @app.post("/process_data")
 async def process_data(request_data: RequestData):
+    found = False
     # Получаем данные из запроса
     user_id = request_data.user_id
 
-    if user_id not in connections:
+    for user in connections:
+        if user_id == user.get("user_id"):
+            found = True
+            break
+        else:
+            found =False
 
+    if found is False:   
+        # found = False
         # Получаем API по user_id
         api_key, api_secret = get_api(user_id)
 
         log_info('-------Connecting the client-------')
 
         # Соханение user_id
-        connections.append(user_id)  # Заменить на что то другое
+        # connections.append(user_id)  # Заменить на что то другое
 
         # Запускаем обработку через threading
         # await process_data_thread(api_key_t, sicret_key_t)
 
         # Запускаем обработку данных асинхронно
-        asyncio.create_task(async_wrapper(api_key, api_secret))
+        asyncio.create_task(async_wrapper(api_key, api_secret, user_id))
 
         return {"message": "Данные обработаны и успешно отправлены"}
+
+            
 
 
 if __name__ == "__main__":

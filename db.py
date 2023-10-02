@@ -23,7 +23,9 @@ def get_api(user_id: int):
             else:
                 api_key = row[0][0]
                 secret_key = row[1][0]
-                
+            print(api_key)
+            print(secret_key)
+
             return api_key, secret_key
         
         
@@ -36,5 +38,10 @@ def get_api(user_id: int):
     # Тестовые Api
     # api_key_t = "7JuvXA8neo677M77iqnJaEDL85cxJ8duX34JmSI1XJrCGmyMqoYUi8dwg7JMz4aY"
     # sicret_key_t = "o40b1Zx2OqJgVSde2MBtWizdkLQwId9KnJessb10x3Lf67ij70uNrvDdYEMgLmm1"
+
+    # return api_key_t, sicret_key_t
+    # Тестовые Api
+    # api_key_t = "tghAG0uJrC36B5NxAHsGP8puUmAnmE3O8TbUuoYEzgFkfHgwQ0RgvxL5axGVFGZb"
+    # sicret_key_t = "AyazPq058eBVTMTm5FJ4flBdnDzxJ9o0XAH3JwKAmkIanW7qp82qmOxgKj4F84EL"
 
     # return api_key_t, sicret_key_t

@@ -8,6 +8,7 @@ from binance_server.update_listen_key import update_listen_key
 import asyncio
 from loger.loger import *
 import json
+from clients import connections
 
 
 # Функция-обработчик для обработки входящих сообщений от вебсокета
@@ -17,7 +18,10 @@ def on_message_ws(_, message):
         if r["e"] == "executionReport":
             # Отправка данных на API методом post
             try:
-                requests.post("http://localhost:1234/orders", data=message)
+                sleep(1)
+                requests.post("https://back-test.anesthezia.io/binance/socket-event", data={'data': message})
+                print(message)
+            
             except Exception as e:
                 log_warning('message send error')
                 print(e)
@@ -41,16 +45,13 @@ def on_open_ws(_):
     log_info("connecting")
 
 
-def main(api_key, secret_key):
+def main(api_key, secret_key, user_id):
     # ************ Запуск сокета ************
     click.secho("Поднимаю Stream", fg='magenta')
 
-    # Тестовая сеть
-    # client = SpotWebsocketStreamClient(
-    #     stream_url="wss://testnet.binance.vision", on_message=on_message_ws)
-
     # Рабочая сеть
     client = SpotWebsocketStreamClient(
+        stream_url="wss://testnet.binance.vision",
         on_open=on_open_ws,
         on_message=on_message_ws,
         on_error=on_error,
@@ -59,8 +60,17 @@ def main(api_key, secret_key):
     try:
         # Рабочий листенкей
         listen_key = get_listen_key(api_key=api_key, secret_key=secret_key)
-
+        
         client.user_data(listen_key=listen_key, id=1)
+
+        connections.append(
+            {
+                "user_id": user_id,
+                "listenKey": listen_key,
+                "client": client
+            }
+        )
+        
 
         # Обновление listen_key каждый час
         i = 1
@@ -73,11 +83,12 @@ def main(api_key, secret_key):
                 )
                 log_info("ListenKey обновлён")
                 i = 0 
-
             if i % 60 == 0 and i != 0:
                 click.secho(f"Сокет ок, {int(i/60)} мин.", fg="yellow")
+                print(connections)
             i += 1
             sleep(1)
+        
 
     except KeyboardInterrupt:
         ...

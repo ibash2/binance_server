@@ -8,7 +8,7 @@ def get_spot_client(api_key, secret_key):
     :return:
     """
     return Spot(
-        # base_url='https://testnet.binance.vision',
+        base_url='https://testnet.binance.vision',
         api_key=api_key,
         api_secret=secret_key,
     )

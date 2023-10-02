@@ -33,3 +33,368 @@ binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-
 binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
 root -> INFO: closed
 root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Sun, 01 Oct 2023 08:34:06 GMT', 'Server': 'nginx', 'x-mbx-uuid': '3a847175-4123-4530-8aac-01e06590edd0', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 8a6f67a9421de326f43e9107751b580e.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'FRA56-P4', 'X-Amz-Cf-Id': '6bJcG7i4uvDoqkumeuKhrOJfKA4LU_VetPQ4yhcTv1mTQ0aE5JOysQ=='}, None)
+asyncio -> DEBUG: Using proactor: IocpProactor
+asyncio -> DEBUG: Using proactor: IocpProactor
+asyncio -> DEBUG: Using proactor: IocpProactor
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+root -> WARNING: main() missing 1 required positional argument: 'user_id'
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"], "id": 1}
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"], "id": 1}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: 'list' object has no attribute 'get'
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"], "id": 1}
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["cSFy0jC8LtJTl4Cjqm77Rz5DktvyTF5ro3X5X1xtLGbiqdiByuAYOhzNJ2N5"], "id": 1}
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"], "id": 1}
+asyncio -> DEBUG: Using proactor: IocpProactor
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"], "id": 1}
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:00:31 GMT', 'Server': 'nginx', 'x-mbx-uuid': '3a847175-4123-4530-8aac-01e06590edd0', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 9e7d825887069100f188900375c625e6.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'HxPWRU8q-OJYAQR4zLuqxF0pz_9T8mj6j8A2em7ZMDwADUXlecHRRQ=='}, None)
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:01:52 GMT', 'Server': 'nginx', 'x-mbx-uuid': '85622407-035a-447d-9a1b-1ff72a87d86d', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 95ad0c949c0fe7e97075c6690b8574aa.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'EBdHMzdUsf6DhgNT1cwbbYg_aimgl-j3DUzpmL73ugQOTQpkoutIUg=='}, None)
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:05:59 GMT', 'Server': 'nginx', 'x-mbx-uuid': 'c4ef1087-c598-449c-a1e8-2ea7067c54a6', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 a64b49e5551565c12c7314b5e4419ba4.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'Wda9AhGGzqklYIQ8b9jP0_sL0wGsnNkP_YN8dKS_OqhVHCy0E2MK_g=='}, None)
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:07:26 GMT', 'Server': 'nginx', 'x-mbx-uuid': '4d841c40-dbef-4f1c-9cff-d5fdca43a134', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 732d3ca1627bbec3dcfe750ff23e18bc.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'CrmDRuJGX3XVHzPRiEsIsPmVzOutSTQaqZ6XqeVjXRgNZtsoIozWow=='}, None)
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:07:50 GMT', 'Server': 'nginx', 'x-mbx-uuid': 'f2903cd0-180b-4431-a6f3-8815db5eb1f2', 'x-mbx-used-weight': '4', 'x-mbx-used-weight-1m': '4', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 9e7d825887069100f188900375c625e6.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'AFPFqBC6m3rwY1yClFT63BglgUGNf7ElCd0-tKkgXEN0hPNKVHSYLg=='}, None)
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://stream.binance.com:9443/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://stream.binance.com:9443/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["14gOLqM0YffGmbBMNVsEtNq16YOL4SnPHez0BP7UF0TV9txIonQrUNilCf5t"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://api.binance.com/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): api.binance.com:443
+urllib3.connectionpool -> DEBUG: https://api.binance.com:443 "POST /api/v3/userDataStream HTTP/1.1" 401 70
+binance.api -> DEBUG: raw response from server:{"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+binance.websocket.websocket_client -> WARNING: CLOSE frame received, closing websocket connection
+root -> INFO: closed
+root -> WARNING: (401, -2015, 'Invalid API-key, IP, or permissions for action.', {'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '70', 'Connection': 'keep-alive', 'Date': 'Mon, 02 Oct 2023 12:12:48 GMT', 'Server': 'nginx', 'x-mbx-uuid': '22e1224e-7d35-40cb-9d9a-ecea6e43006f', 'x-mbx-used-weight': '2', 'x-mbx-used-weight-1m': '2', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains', 'X-Frame-Options': 'SAMEORIGIN', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'self'", 'X-Content-Security-Policy': "default-src 'self'", 'X-WebKit-CSP': "default-src 'self'", 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 671239541300bae29061aebf82d37474.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'HEL51-P1', 'X-Amz-Cf-Id': 'DqifGld5eVIeuNufDu_mkX5c-ljgYdY1oG4nsrtJeFgeZGzz-s0DCw=='}, None)
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+urllib3.connectionpool -> DEBUG: Starting new HTTP connection (1): localhost:1234
+urllib3.connectionpool -> DEBUG: http://localhost:1234 "POST /orders HTTP/1.1" 200 4
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 0
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+asyncio -> DEBUG: Using proactor: IocpProactor
+root -> INFO: -------Connecting the client-------
+binance.websocket.websocket_client -> DEBUG: Creating connection with WebSocket Server: wss://testnet.binance.vision/ws, proxies: None
+binance.websocket.websocket_client -> DEBUG: WebSocket connection has been established: wss://testnet.binance.vision/ws, proxies: None
+root -> INFO: connecting
+binance.websocket.websocket_client -> DEBUG: Binance WebSocket Client started.
+binance.api -> DEBUG: url: https://testnet.binance.vision/api/v3/userDataStream
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): testnet.binance.vision:443
+urllib3.connectionpool -> DEBUG: https://testnet.binance.vision:443 "POST /api/v3/userDataStream HTTP/1.1" 200 76
+binance.api -> DEBUG: raw response from server:{"listenKey":"d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"}
+binance.websocket.websocket_client -> DEBUG: Sending message to Binance WebSocket Server: {"method": "SUBSCRIBE", "params": ["d9gengWwaGZPsawxNVY3bPhjVh7THFkw4KQXNRDcfkTk7lUPWgo7PdkZL3gw"], "id": 1}
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+urllib3.connectionpool -> DEBUG: Starting new HTTPS connection (1): back-test.anesthezia.io:443
+urllib3.connectionpool -> DEBUG: https://back-test.anesthezia.io:443 "POST /binance/socket-event HTTP/1.1" 200 None
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
+binance.websocket.websocket_client -> DEBUG: Received Ping; PONG frame sent back
